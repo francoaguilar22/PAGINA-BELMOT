@@ -1,0 +1,75 @@
+{
+    "name": "vm2-HBelmot-windows",
+    "id": "/subscriptions/d3a52f6a-ea66-4527-95b5-9b2a2a8bd883/resourceGroups/vm-HBelmot/providers/Microsoft.Compute/virtualMachines/vm2-HBelmot-windows",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "58b8b656-a4ee-4afb-a626-1493c9af230b",
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2016-datacenter-gensecond",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "vm2-HBelmot-windows_disk1_f5ffe8c79b6547e6be8d24e9c54050a2",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/d3a52f6a-ea66-4527-95b5-9b2a2a8bd883/resourceGroups/vm-HBelmot/providers/Microsoft.Compute/disks/vm2-HBelmot-windows_disk1_f5ffe8c79b6547e6be8d24e9c54050a2"
+                },
+                "diskSizeGB": 127
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "vm2-HBelmot-win",
+            "adminUsername": "Belmot",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/d3a52f6a-ea66-4527-95b5-9b2a2a8bd883/resourceGroups/vm-HBelmot/providers/Microsoft.Network/networkInterfaces/vm2-hbelmot-windows877"
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    },
+    "zones": [
+        "1"
+    ],
+    "resources": [
+        {
+            "name": "enablevmaccess",
+            "id": "/subscriptions/d3a52f6a-ea66-4527-95b5-9b2a2a8bd883/resourceGroups/vm-HBelmot/providers/Microsoft.Compute/virtualMachines/vm2-HBelmot-windows/extensions/enablevmaccess",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Failed",
+                "publisher": "Microsoft.Compute",
+                "type": "VMAccessAgent",
+                "typeHandlerVersion": "2.0",
+                "settings": {
+                    "UserName": "Belmot"
+                }
+            }
+        }
+    ]
+}
