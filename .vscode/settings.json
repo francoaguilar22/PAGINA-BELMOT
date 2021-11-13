@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/d3a52f6a-ea66-4527-95b5-9b2a2a8bd883/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Belmot-citas",
-    "appService.deploySubpath": "."
-}

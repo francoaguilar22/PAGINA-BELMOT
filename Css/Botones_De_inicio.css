@@ -48,13 +48,13 @@ body{
 /* border: 5px solid rgb(161, 161, 161);  */
 background-color: #ffffff;
 color: #4badb4;
-margin-left:195px ;
+margin-left:100px ;
 margin-right: 70px;
 margin-top: -55px;
 margin-bottom: 30px;
 padding: 15px; 
 border-radius: 10px; 
-font-size: 100%;
+font-size: 95%;
 font-family: "cenzil";
 font-family: "comforta";
 max-width: 120%;
@@ -78,7 +78,7 @@ max-width: 120%;
 
 .boton1{
     
-    margin-left:150px;
+    margin-left:120px;
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
